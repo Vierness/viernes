@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    border: 0;
+    box-shadow: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --text-color: #fff;
+    --bg-color: #1b1f24;
+    --segun-bg-color: #22282f;
+    --main-color: #13bbff;
+    --otro-color: #c3cad5;
+
+    --h1-font: 4.5rem;
+    --h2-font: 3.0rem;
+    --p-font:1rem;
+}
+
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+
+
+/* header */
+
+header{
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background: transparent;
+    transition: all .50s ease;
+}
+
+
+.logotipo{
+    font-size: 35px; 
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+span{
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.contra_titulo{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.contra_titulo h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.contra_titulo h3{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+.container-contrato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formu-contrato{
+    display: grid;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.formu-contrato input{
+    margin: 10px;
+    padding: 20px 10px;
+    width: 100%;
+    border: 1px solid var(--main-color);
+    background: var(--segun-bg-color);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.contacto_form-input{
+    background: var(--segun-bg-color);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 60px;
+}
+
+.formu-contrato2{
+    display: grid;
+    flex-direction: column;
+}
+
+
+.contacto_button{
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.contacto_buttonn{
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    padding: 10px;
+    background: transparent;
+    font-size: 20px;
+    transition: all .50s ease;
+}
+
+.contacto_buttonn i{
+    transition: all .50s ease;
+}
+
+.contacto_buttonn:hover{
+    color: var(--bg-color);
+    background: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.contacto_buttonn:hover i{
+    font-size: 20px;
+    transform: translateX(.55rem );
+}
+
+.contacto_button i{
+    font-size: 1rem;
+    transition: all .50s ease;
+}
+
+.contacto_button:hover i{
+    color: var(--main-color);
+    font-size: 20px;
+    transform: translateX(.25rem);
+}
